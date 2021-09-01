@@ -16,9 +16,12 @@ public class CountObject : ScriptableObject
         count = Mathf.Clamp(count, 0, 16777215);
 
 #if UNITY_EDITOR
-        EditorUtility.SetDirty(this);
-        AssetDatabase.SaveAssets();
-        AssetDatabase.Refresh();
+	    if (!EditorApplication.isPlayingOrWillChangePlaymode)
+		{
+			EditorUtility.SetDirty(this);
+			AssetDatabase.SaveAssets();
+			AssetDatabase.Refresh();
+		}
 #endif
     }
 }

@@ -170,13 +170,16 @@ namespace EZLocalization
         }
 
         public void CreateCountScriptableObjectAndAddToThisAsset()
-        {
-            CountObject counter = CreateInstance(typeof(CountObject)) as CountObject;
-            counter.name = "Loc ID Counter";
-            AssetDatabase.AddObjectToAsset(counter, this);
-            count_so = counter;
-            AssetDatabase.SaveAssets();
-            AssetDatabase.Refresh();
+        {          
+			if (!EditorApplication.isPlayingOrWillChangePlaymode)
+            {
+				CountObject counter = CreateInstance(typeof(CountObject)) as CountObject;
+				counter.name = "Loc ID Counter";
+				AssetDatabase.AddObjectToAsset(counter, this);
+				count_so = counter;
+				AssetDatabase.SaveAssets();
+				AssetDatabase.Refresh();
+			}
         }
 
         private void OnValidate()
@@ -209,10 +212,13 @@ namespace EZLocalization
         }
 
         void EditorSave()
-        {
-            EditorUtility.SetDirty(this);
-            AssetDatabase.SaveAssets();
-            AssetDatabase.Refresh();
+        {          
+			if (!EditorApplication.isPlayingOrWillChangePlaymode)
+            {
+				EditorUtility.SetDirty(this);
+				AssetDatabase.SaveAssets();
+				AssetDatabase.Refresh();
+			}
         }
 
         [MenuItem("CONTEXT/LocalizationDatabase/Export CSVs")]
