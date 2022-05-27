@@ -19,8 +19,8 @@ public class CountObject : ScriptableObject
 	    if (!EditorApplication.isPlayingOrWillChangePlaymode)
 		{
 			EditorUtility.SetDirty(this);
-			AssetDatabase.SaveAssets();
-			AssetDatabase.Refresh();
+			//AssetDatabase.SaveAssets();
+			//AssetDatabase.Refresh();
 		}
 #endif
     }

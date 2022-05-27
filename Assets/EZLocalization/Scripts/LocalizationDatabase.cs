@@ -177,8 +177,8 @@ namespace EZLocalization
 				counter.name = "Loc ID Counter";
 				AssetDatabase.AddObjectToAsset(counter, this);
 				count_so = counter;
-				AssetDatabase.SaveAssets();
-				AssetDatabase.Refresh();
+				//AssetDatabase.SaveAssets();
+				//AssetDatabase.Refresh();
 			}
         }
 
@@ -216,8 +216,8 @@ namespace EZLocalization
 			if (!EditorApplication.isPlayingOrWillChangePlaymode)
             {
 				EditorUtility.SetDirty(this);
-				AssetDatabase.SaveAssets();
-				AssetDatabase.Refresh();
+				//AssetDatabase.SaveAssets();
+				//AssetDatabase.Refresh();
 			}
         }
 
