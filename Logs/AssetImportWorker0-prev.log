@@ -15,7 +15,7 @@ C:/git/EZLocalization
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-59766
+51320
 Successfully changed project path to: C:/git/EZLocalization
 C:/git/EZLocalization
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ C:/git/EZLocalization
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 27.09 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.83 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.2f1 (d6360bedb9a0)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/Resources/UnitySubsystems
@@ -63,87 +63,87 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56532
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56108
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.009279 seconds.
+Registered in 0.009418 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 22.63 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.62 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.573 seconds
+- Completed reload, in  0.557 seconds
 Domain Reload Profiling:
-	ReloadAssembly (573ms)
-		BeginReloadAssembly (78ms)
+	ReloadAssembly (558ms)
+		BeginReloadAssembly (75ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (386ms)
-			LoadAssemblies (75ms)
+		EndReloadAssembly (365ms)
+			LoadAssemblies (72ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (111ms)
+			SetupTypeCache (109ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (25ms)
-			SetupLoadedEditorAssemblies (199ms)
+			RebuildScriptCaches (27ms)
+			SetupLoadedEditorAssemblies (182ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
+				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (23ms)
+				RefreshPlugins (1ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (125ms)
-				ProcessInitializeOnLoadMethodAttributes (42ms)
+				ProcessInitializeOnLoadAttributes (129ms)
+				ProcessInitializeOnLoadMethodAttributes (44ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.005087 seconds.
+Registered in 0.000000 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.886 seconds
+- Completed reload, in  0.559 seconds
 Domain Reload Profiling:
-	ReloadAssembly (887ms)
-		BeginReloadAssembly (119ms)
+	ReloadAssembly (560ms)
+		BeginReloadAssembly (110ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (24ms)
-		EndReloadAssembly (643ms)
-			LoadAssemblies (80ms)
+			CreateAndSetChildDomain (18ms)
+		EndReloadAssembly (372ms)
+			LoadAssemblies (60ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (187ms)
+			SetupTypeCache (96ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (44ms)
-			SetupLoadedEditorAssemblies (298ms)
+			RebuildScriptCaches (22ms)
+			SetupLoadedEditorAssemblies (167ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
+				InitializePlatformSupportModulesInManaged (12ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (51ms)
-				ProcessInitializeOnLoadAttributes (199ms)
-				ProcessInitializeOnLoadMethodAttributes (31ms)
-				AfterProcessingInitializeOnLoad (9ms)
+				BeforeProcessingInitializeOnLoad (20ms)
+				ProcessInitializeOnLoadAttributes (109ms)
+				ProcessInitializeOnLoadMethodAttributes (16ms)
+				AfterProcessingInitializeOnLoad (10ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1677 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 19 unused Assets / (47.8 KB). Loaded Objects now: 2141.
-Memory consumption went from 71.9 MB to 71.9 MB.
-Total: 2.905500 ms (FindLiveObjects: 0.239900 ms CreateObjectMapping: 0.107900 ms MarkObjects: 2.492200 ms  DeleteObjects: 0.064000 ms)
+Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 2 unused Assets / (47.5 KB). Loaded Objects now: 486.
+Memory consumption went from 22.5 MB to 22.5 MB.
+Total: 2.368600 ms (FindLiveObjects: 0.039000 ms CreateObjectMapping: 0.003300 ms MarkObjects: 2.266200 ms  DeleteObjects: 0.059300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -156,3 +156,111 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 58358.056792 seconds.
+  path: Assets/EZLocalization/Scripts/LanguagesEnum.cs
+  artifactKey: Guid(65a61b44c12a1934c9771e0c7f785b51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EZLocalization/Scripts/LanguagesEnum.cs using Guid(65a61b44c12a1934c9771e0c7f785b51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77ccc4698ae4e2fc21141b017064f265') in 0.033053 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002170 seconds.
+  path: Assets/EZLocalization/Scripts/UtilityScripts/GUIDGenerator.cs
+  artifactKey: Guid(ee361ae071d888c41acb2a131991727d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EZLocalization/Scripts/UtilityScripts/GUIDGenerator.cs using Guid(ee361ae071d888c41acb2a131991727d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4db705c9c0987440ac53461b91e7c21') in 0.004326 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001842 seconds.
+  path: Assets/EZLocalization/Resources/Templates
+  artifactKey: Guid(5ecf37d46b7292e41a991a8e16c70742) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EZLocalization/Resources/Templates using Guid(5ecf37d46b7292e41a991a8e16c70742) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70534e2dfd0374b06e599bba7380688f') in 0.003866 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002457 seconds.
+  path: Assets/EZLocalization/Scripts/UtilityScripts/Editor/IDPropertyDrawer.cs
+  artifactKey: Guid(cd5f6aa1ab66ccf4ca82a63b0f36cfe1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EZLocalization/Scripts/UtilityScripts/Editor/IDPropertyDrawer.cs using Guid(cd5f6aa1ab66ccf4ca82a63b0f36cfe1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b117fbe0f68172c466afd8f636ad1a07') in 0.004112 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002094 seconds.
+  path: Assets/EZLocalization/Editor/LocalizedDataManagerEditor.cs
+  artifactKey: Guid(9ec4246aaf7f13345a7a6d4b67a04662) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EZLocalization/Editor/LocalizedDataManagerEditor.cs using Guid(9ec4246aaf7f13345a7a6d4b67a04662) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfdacaad4f2947e7fc50d25329d68c0a') in 0.004320 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002074 seconds.
+  path: Assets/EZLocalization/Resources/Templates/LanguagesEnumTemplate.cs
+  artifactKey: Guid(44318fcd8c39b6449b7b446bf84ce800) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EZLocalization/Resources/Templates/LanguagesEnumTemplate.cs using Guid(44318fcd8c39b6449b7b446bf84ce800) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9afd9451f36a0c09b4808770c9fa49b1') in 0.004321 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002119 seconds.
+  path: Assets/EZLocalization/Editor/LocalizationWindow.cs
+  artifactKey: Guid(e579028de8e6a1b4dbf81080cf03f65e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EZLocalization/Editor/LocalizationWindow.cs using Guid(e579028de8e6a1b4dbf81080cf03f65e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c1b3a086d56b5e9bad68a70ad21581d') in 0.004412 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002200 seconds.
+  path: Assets/EZLocalization/Scripts/LocalizedDataManager.cs
+  artifactKey: Guid(4ed6aac99c5de514f9968cef867cb501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EZLocalization/Scripts/LocalizedDataManager.cs using Guid(4ed6aac99c5de514f9968cef867cb501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4f1364ff04b7c3dfef0e594ab21c27e') in 0.004277 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002088 seconds.
+  path: Assets/EZLocalization/Resources
+  artifactKey: Guid(21dd690b249e3aa4ab45c73c29bd8cee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EZLocalization/Resources using Guid(21dd690b249e3aa4ab45c73c29bd8cee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '313696bd85b0e4b83ebfa344f1de3838') in 0.004525 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002510 seconds.
+  path: Assets/EZLocalization/Scripts/LocalizationDatabase.cs
+  artifactKey: Guid(a2678c81ee007dc4a8bb0bbf156753ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EZLocalization/Scripts/LocalizationDatabase.cs using Guid(a2678c81ee007dc4a8bb0bbf156753ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebd6ec07d7d32abd1c090c04b64bf1ae') in 0.004680 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002416 seconds.
+  path: Assets/EZLocalization/Scripts/UtilityScripts/CountObject.cs
+  artifactKey: Guid(062b2a4de2bc04241b4a5f8e0e4a0bb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EZLocalization/Scripts/UtilityScripts/CountObject.cs using Guid(062b2a4de2bc04241b4a5f8e0e4a0bb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0275a8d8c3d286b27538b81f3bb7ecc4') in 0.005208 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002496 seconds.
+  path: Assets/EZLocalization/Scripts/LocalizationLanguages.cs
+  artifactKey: Guid(f4fda5bf34b68494d8558b399a445fa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EZLocalization/Scripts/LocalizationLanguages.cs using Guid(f4fda5bf34b68494d8558b399a445fa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5691163b0d608d3dd496ad89a87039aa') in 0.005036 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001774 seconds.
+  path: Assets/EZLocalization/Scripts
+  artifactKey: Guid(edc81110e92976044baa809ea0c4002b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EZLocalization/Scripts using Guid(edc81110e92976044baa809ea0c4002b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22b9451766b43dc60f2a27aa3b8aad62') in 0.005980 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001682 seconds.
+  path: Assets/EZLocalization/Scripts/UtilityScripts
+  artifactKey: Guid(d714cdb5025701e4eb3e8f3106bc74fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EZLocalization/Scripts/UtilityScripts using Guid(d714cdb5025701e4eb3e8f3106bc74fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eea31a853f413fcdb38a5f5b5109afd3') in 0.004577 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002262 seconds.
+  path: Assets/EZLocalization/Resources/Localization Languages.asset
+  artifactKey: Guid(189728910acce354ab175bf744d93440) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EZLocalization/Resources/Localization Languages.asset using Guid(189728910acce354ab175bf744d93440) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbd10c3fffb0c74d398e79e687853e78') in 0.020981 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002015 seconds.
+  path: Assets/EZLocalization/Scripts/UtilityScripts/Editor
+  artifactKey: Guid(dc0735cd4dc41d746a1d9ef1d264363f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EZLocalization/Scripts/UtilityScripts/Editor using Guid(dc0735cd4dc41d746a1d9ef1d264363f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5b78ef88561d12ab5288d06dd00f9e5') in 0.004599 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002965 seconds.
+  path: Assets/EZLocalization/Editor
+  artifactKey: Guid(3a3b54637afd905449890449132220e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EZLocalization/Editor using Guid(3a3b54637afd905449890449132220e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '493f5f19c811a0dfd1f52d31e890c69e') in 0.002373 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002686 seconds.
+  path: Assets/EZLocalization/Resources/Localization Database.asset
+  artifactKey: Guid(deee4648ef7c5de42919a8b11eb8a1cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EZLocalization/Resources/Localization Database.asset using Guid(deee4648ef7c5de42919a8b11eb8a1cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e375970abc269f5609433a19ccfbb77') in 0.008610 seconds 

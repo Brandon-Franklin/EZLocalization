@@ -46,6 +46,21 @@ namespace EZLocalization
                 return null;
             }
         }
+
+        public List<string> GetLocStringList(ID targetID)
+        {
+            if (stringID_keys.Contains(targetID))
+            {
+                int index = stringID_keys.IndexOf(targetID);
+                return strings[index].languageStrings;
+            }
+            else
+            {
+                Debug.LogError($"{targetID} is not a valid Loc ID");
+                return null;
+            }
+        }
+
         public string GetLocString(string targetID_string)
         {
             ID targetID = new ID(targetID_string);
@@ -58,6 +73,20 @@ namespace EZLocalization
             {
                 int index = stringID_keys.IndexOf(targetID);
                 return strings[index].languageClips[(int)localizedLanguages.currentLanguage];
+            }
+            else
+            {
+                Debug.LogError($"{targetID} is not a valid Loc ID");
+                return null;
+            }
+        }
+
+        public List<AudioClip> GetLocClipList(ID targetID)
+        {
+            if (stringID_keys.Contains(targetID))
+            {
+                int index = stringID_keys.IndexOf(targetID);
+                return strings[index].languageClips;
             }
             else
             {
@@ -170,16 +199,16 @@ namespace EZLocalization
         }
 
         public void CreateCountScriptableObjectAndAddToThisAsset()
-        {          
-			if (!EditorApplication.isPlayingOrWillChangePlaymode)
+        {
+            if (!EditorApplication.isPlayingOrWillChangePlaymode && !EditorApplication.isCompiling && !EditorApplication.isUpdating)
             {
-				CountObject counter = CreateInstance(typeof(CountObject)) as CountObject;
-				counter.name = "Loc ID Counter";
-				AssetDatabase.AddObjectToAsset(counter, this);
-				count_so = counter;
-				//AssetDatabase.SaveAssets();
-				//AssetDatabase.Refresh();
-			}
+                CountObject counter = CreateInstance(typeof(CountObject)) as CountObject;
+                counter.name = "Loc ID Counter";
+                AssetDatabase.AddObjectToAsset(counter, this);
+                count_so = counter;
+                AssetDatabase.SaveAssets();
+                AssetDatabase.Refresh();
+            }
         }
 
         private void OnValidate()
@@ -187,7 +216,6 @@ namespace EZLocalization
             AddMissingEntries();
             EditorSave();
         }
-
         void AddMissingEntries()
         {
             for (int i = 0; i < strings.Count; i++)
@@ -212,15 +240,14 @@ namespace EZLocalization
         }
 
         void EditorSave()
-        {          
-			if (!EditorApplication.isPlayingOrWillChangePlaymode)
+        {
+            if (!EditorApplication.isPlayingOrWillChangePlaymode && !EditorApplication.isCompiling && !EditorApplication.isUpdating)
             {
-				EditorUtility.SetDirty(this);
-				//AssetDatabase.SaveAssets();
-				//AssetDatabase.Refresh();
-			}
+                EditorUtility.SetDirty(this);
+                // AssetDatabase.SaveAssets();
+                // AssetDatabase.Refresh();
+            }
         }
-
         [MenuItem("CONTEXT/LocalizationDatabase/Export CSVs")]
         public static void ExportCSV(MenuCommand command)
         {
@@ -229,8 +256,8 @@ namespace EZLocalization
             LocalizationDatabase locBD = (LocalizationDatabase)command.context;
             for (int j = 0; j < locBD.localizedLanguages.languages.Count; j++)
             {
-                string folderPath = exportRootPath + "/" + locBD.localizedLanguages.languages[j] + "/";
-                string filePath = exportRootPath + "/" + locBD.localizedLanguages.languages[j] + "/" + $"loc_{locBD.localizedLanguages.languages[j]}.csv";
+                string folderPath = $"{exportRootPath}/{locBD.localizedLanguages.languages[j]}/";
+                string filePath = $"{exportRootPath}/{locBD.localizedLanguages.languages[j]}/loc_{locBD.localizedLanguages.languages[j]}.csv";
                 string fileString = string.Empty;
 
                 if (!Directory.Exists(folderPath))
@@ -240,7 +267,7 @@ namespace EZLocalization
 
                 for (int i = 0; i < locBD.stringID_keys.Count; i++)
                 {
-                    fileString += locBD.stringID_keys[i].hex + ",";
+                    fileString += $"{locBD.stringID_keys[i].hex},";
                     fileString += locBD.strings[i].languageStrings[j];
                     if (i < locBD.stringID_keys.Count - 1)
                     {
